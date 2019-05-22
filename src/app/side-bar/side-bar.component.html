@@ -1,0 +1,19 @@
+
+<button type="button"  [routerLink]="['messages']"class="btn btn-primary">
+    הודעות חדשות <span class="badge badge-light">4</span>
+  </button>
+  
+<div id="mySidepanel" class="sidepanel">
+    
+    <li routerLinkActive="active"><a routerLink="signup">יצירת משתמשים </a></li>
+    <li routerLinkActive="active"><a routerLink="about">עדכון נתונים </a></li>
+    <li routerLinkActive="active"><a routerLink="">צפייה בדוח החודשי</a></li>
+    <li routerLinkActive="active"><a routerLink="UsersList">רשימת משתמשים</a></li>
+    <li routerLinkActive="active"><a routerLink="calls"> פניות</a></li>
+   
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <a  (click)="onLogout()" class="glyphicon glyphicon-log-out"> יציאה </a>
+  </div>
+  
+  <button class="openbtn" (click)="openNav()">&#9776; </button> 
+ 

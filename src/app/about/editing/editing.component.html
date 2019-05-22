@@ -1,0 +1,62 @@
+
+<div class="container">   
+
+        <div id="loginbox" style="margin-top:20px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title"> עדכון דף על התוכנית</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">שכחתי ססימה</a></div>
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >
+
+                        
+                            
+                        <form  (ngSubmit)="onEditing(f)" #f="ngForm"class="form-horizontal" >
+                                    
+                            <div style="margin-bottom: 25px" class="input-group">
+                                       
+                                        
+                            <input type="number" id="email" name="Followers"ngModel class="form-control" placeholder=" עוקבים ברשת">                                       
+                                    </div>
+                                    <div style="margin-bottom: 25px" class="input-group">
+                                       
+                                        
+                                        <input type="number" id="email" name="partisipants"ngModel class="form-control" placeholder="משתתפים באירועים ">                                       
+                                                </div>
+                                                <div style="margin-bottom: 25px" class="input-group">
+                                       
+                                        
+                                                    <input type="number" id="email" name="events"ngModel class="form-control" placeholder="אירועים קהילתיים ">                                       
+                                                            </div>
+                                                            <div style="margin-bottom: 25px" class="input-group">
+                                       
+                                        
+                                                                <input type="number" id="email" name="rooms"ngModel class="form-control" placeholder="כמה חדרים ">                                       
+                                                                        </div>
+                                                                        <div style="margin-bottom: 25px" class="input-group">
+                                       
+                                        
+                                                                            <input type="number" id="email" name="Busniss"ngModel class="form-control" placeholder="אירועים קהילתיים ">                                       
+                                                                                    </div>
+
+                                <div style="margin-top:10px" class="form-group">
+                                    <!-- Button -->
+
+                                    <div class="col-sm-12 controls">
+                                        <button class="btn btn-success" type="submit" [disabled]="!f.valid">בצע</button>
+                                     
+                                     
+                                    </div>
+                                </div>
+
+
+                            
+                            </form>     
+
+
+
+                        </div>                     
+                    </div>  
+        </div>
+    

@@ -1,0 +1,86 @@
+
+
+
+<div class="container">
+  
+	<div class="row">
+		<div class="form-box">
+       
+        <h1>טופס <span>הרשמה</span></h1>
+        <form data-toggle="validator" (ngSubmit)="createNewUser(f)" #f="ngForm" role="form" id="contact-form">
+    	    
+            <!-- name field -->
+                
+            <div class="alert alert-success" role="alert"*ngIf='Message'>
+                {{Message}}
+              </div>
+
+
+              <div class="alert alert-danger" role="alert"*ngIf='ErrorMessage'>
+                
+               <strong>{{ErrorMessage}}</strong> 
+               
+              </div>
+              
+              <div class="alert alert-danger" role="alert"*ngIf=''>
+                   
+                 <strong>חסר</strong> 
+                 
+                </div>
+              
+              
+                <label for="form-name-field" class="sr-only">שם משתמש</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                        <input ngModule required type="name" id="name" name="name"ngModel class="form-control" placeholder="שם משתשמש" >
+                         
+                    </div>
+               
+                
+            <!-- email field -->
+            
+                <div id="emailError" class="alert" role="alert"></div>
+                <label for="form-email-field" class="sr-only" >Email</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                        <input ngModule required email type="email" id="email" name="email"ngModel class="form-control" placeholder="דואר אלקטרוני" >
+                    </div>
+                
+             
+                    <div id="phoneError" class="alert" role="alert"></div>
+                    <label for="form-phone-field" class="sr-only">Phone</label>
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
+                            <input ngModule required password type="password" id="password" name="password"ngModel class="form-control" placeholder="סיסמה">
+                            
+                       
+                    </div>
+            <!-- phone field -->
+               
+                <div id="phoneError" class="alert" role="alert"></div>
+                <label for="form-phone-field" class="sr-only">Phone</label>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></div>
+                        <input ngModule required type="phone" id="phone" name="phone"ngModel class="form-control" placeholder="מספר טלפון">
+                    </div>
+                
+                
+                    <label for="exampleFormControlSelect1">הרשאות</label>
+                    <select ngModule required (change)="selectChangeHandler($event)"class="form-control" >
+                       
+                        <option  value="user" ></option>
+                        <option  value="user" >משתמש</option>
+                      <option value="manger">מנהל</option>
+                      
+                     
+                    </select>
+                  <br>
+                <button class="btn btn-primary" type="submit" >יצירת משתמש</button>
+                
+                  
+              
+    	    </form>   
+		</div>
+  </div>
+  
+

@@ -1,0 +1,104 @@
+
+
+ <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="jumbotron jumbotron-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-sm-12">
+                <h1 class="h1">
+                    Contact us <small>Feel free to contact us</small></h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+      
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                    <form  data-toggle="validator" (ngSubmit)="StoreMessages(f)" #f="ngForm"class="form-horizontal" >
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                שם *</label>
+                                <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
+                                </span>
+                                <input ngModule required type="text" id="email" name="name"ngModel class="form-control" placeholder="שם מלא">                                       
+   
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                דואר אלקטרוני *</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input  ngModule required type="email" id="email" name="email"ngModel class="form-control" placeholder=" דואר אלקטרוני">     
+                               
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                טלפון *</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-phone"></span>
+                                </span>
+                                <input  ngModule required type="phone" id="phone" name="phone"ngModel class="form-control" placeholder="מספר טלפון ">     
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="name">
+                                הודעה</label>
+                                
+                            <textarea  ngModule required type="text" class="float-right" id="message" name="message"ngModel class="form-control" rows="9" cols="25" placeholder="הודעה "></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <div class="col-md-7">
+                            <button type="submit" class="btn btn-warning pull-right" [disabled]="!f.valid">שלח <span class="glyphicon glyphicon-send"></span></button>
+                        </div>
+                    </div>
+                  
+                </div>
+            </form>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4">
+            
+            <legend><span class="glyphicon glyphicon-globe"></span> כתובת שלנו</legend>
+            <address>
+               
+
+                <strong>propertiesguru.com</strong><br>
+יעקוב שרייבום,26             
+   <br>
+                ירושלים-9103501<br>
+                
+                (+972) 123123123
+                <abbr title="Phone">
+                     : טלפון </abbr>
+            </address>
+            <address>
+                 <a href="mailto:#">info@gmail.com</a> :דואר אלקטרוני</address>
+                 <div class="col-md-12">
+                    <ul class="social-network social-circle">
+                     
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>				
+				</div>
+           
+        </div>
+    </div>
+    
+</div> 

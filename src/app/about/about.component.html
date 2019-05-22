@@ -1,0 +1,79 @@
+
+<body>
+<div class="aboutus-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+            <div class="col-md-4 col-sm-6 col-xs-12">    
+                <div class="aboutus-image float-left hidden-sm"><img src="https://devitems.com/preview/sopnovilla/sopnovilla/img/about/1.jpg" alt=""></div>
+                </div>
+            <div class="col-md-10 col-sm-2 col-lg-12">
+                <div class="aboutus-content ">
+                    <h1>על <span>התוכנית</span></h1>
+                    <div class="counter ">
+                        
+                        <div class="single-counter text-center">
+                            <h2 class="counter">{{global.business}}</h2>
+                            <p>כמה עסקים</p>
+                        </div>
+                        
+                        <div class="single-counter text-center">
+                            <h2 class="counter">{{global.rooms}}</h2>
+                            <p>כמה חדרים</p>
+                        </div>
+                        
+                        <div class="single-counter text-center">
+                            <h2 class="counter">{{global.events}}</h2>
+                            <p>אירועים קהילתיים</p>
+                        </div>
+                        
+                        <div class="single-counter text-center">
+                            <h2 class="counter">{{global.participants}}</h2>
+                            <p>משתתפים באירועים</p>
+                        </div>
+                        <div class="single-counter text-center">
+                            <h2 class="counter">{{global.followers}}</h2>
+                            <p>עוקבים ברשת</p>
+                        </div>
+                       
+                    </div>
+                    <ng-template [ngIf]="authService.isAuthenticated()">
+                           
+                            
+                            <a a routerLink="/Editing" class="btn btn-outline-secondary waves-effect">
+                                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                    <span><strong>בצע שינוי</strong></span>            
+                                </a>
+                    </ng-template>
+            
+                    <h4>פסקה של למה</h4>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has oots in a piece
+                       of classitin literature from 45 BC, making it over
+                        2000 years old. Richard McClint professor at Hamden
+                         dney College irginia, looked up one of the more obscure
+                          Latin words, consectetur, from a Lorem Ipsum passage, 
+                          and going through the cites of the word in classical literature.</p>
+                          <h4>פסקה של כמה</h4>
+                          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has oots in a piece
+                             of classitin literature from 45 BC, making it over
+                              2000 years old. Richard McClint professor at Hamden
+                               dney College irginia, looked up one of the more obscure
+                                Latin words, consectetur, from a Lorem Ipsum passage, 
+                                and going through the cites of the word in classical literature.</p>
+                                <h4>פסקה של מתי</h4>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has oots in a piece
+                                   of classitin literature from 45 BC, making it over
+                                    2000 years old. Richard McClint professor at Hamden
+                                     dney College irginia, looked up one of the more obscure
+                                      Latin words, consectetur, from a Lorem Ipsum passage, 
+                                      and going through the cites of the word in classical literature.</p>
+                    
+                    
+                    
+                </div>
+            </div>    
+            </div>
+        </div>
+    </div>
+</div>
+</body>
